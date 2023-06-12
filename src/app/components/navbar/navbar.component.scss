@@ -40,6 +40,9 @@
   font-size: 14px;
   line-height: 16px;
   color: $text-white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 
   &__active {
     &::after {
