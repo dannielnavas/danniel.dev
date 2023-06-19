@@ -1,14 +1,17 @@
-<section>
-  <article>
-    <h1>Ts-app</h1>
-    <time>2020-10-10</time>
-    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-    from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
-    looked up one of the more obscure Latin words, consectetur</p>
-    <div class="actions">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+<article class="card">
+  <div class="projects">
+    <div class="information">
+      <h1 class="information__title">{{ project.title }}</h1>
+      <time class="information__date">{{ project.date }}</time>
+      <p class="information__description">
+        {{ project.description }}
+      </p>
     </div>
-  </article>
-</section>
+    <img src="/assets/image/pipe-projects.svg" alt="pipe projects" class="projects_pipe">
+  </div>
+  <div class="actions">
+    <img src="/assets/image/github.webp" alt="github project" />
+    <img src="/assets/image/shared.webp" alt="shared project" />
+    <img src="" alt="" />
+  </div>
+</article>
