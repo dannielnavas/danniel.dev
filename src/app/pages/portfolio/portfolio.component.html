@@ -23,10 +23,7 @@
 
 <section class="videos">
   <h2 class="videos__title">Videos</h2>
-
-  <ng-container>
-    <app-card-video></app-card-video>
-  </ng-container>
+    <app-card-video *ngIf="videos" [video]="videos.items[1]" />
   <img src="/assets/image/pipe.svg" alt="pipe" class="videos__pipe">
 </section>
 

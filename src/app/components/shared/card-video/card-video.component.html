@@ -1,10 +1,12 @@
 <article>
   <div class="container">
-    <img src="https://images.unsplash.com/photo-1501532358732-8b50b34df1c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" class="container__image">
+    <img [src]="video.snippet.thumbnails.high.url" [alt]="video.snippet.title" class="container__image">
   </div>
 
   <div class="information">
-    <h3 class="information__title">Instalación y configuración sistema operativo Linux</h3>
+    <h3 class="information__title">
+      {{video.snippet.title}}
+    </h3>
     <div class="information__starts">
       <img src="/assets/image/start.webp" alt="start">
     </div>
