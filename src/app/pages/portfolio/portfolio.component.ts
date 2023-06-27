@@ -14,7 +14,7 @@ import { DevtoPostService } from '../../core/services/devto-post/devto-post.serv
 export class PortfolioComponent implements OnInit {
   projects!: IResponseGithub[];
   articles!: IPost[];
-  stasts!: IResponseStatistics;
+  stasts!: IResponseStatistics[];
 
   constructor(
     private githubService: GithubService,

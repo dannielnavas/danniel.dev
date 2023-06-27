@@ -34,11 +34,6 @@
   <h2 class="videos__title">Estadísticas</h2>
 
   <div class="container-projects">
-    <app-card-statistics></app-card-statistics>
-    <app-card-statistics></app-card-statistics>
-    <app-card-statistics></app-card-statistics>
-    <app-card-statistics></app-card-statistics>
-    <app-card-statistics></app-card-statistics>
-    <app-card-statistics></app-card-statistics>
+    <app-card-statistics *ngFor="let stast of stasts" [stast]="stast" />
   </div>
 </section>

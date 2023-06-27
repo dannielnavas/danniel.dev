@@ -10,7 +10,7 @@ import { IResponseStatistics } from '../../models/statistics.interface';
 export class StatisticsService {
   constructor(private http: HttpClient) {}
 
-  getStats(): Observable<IResponseStatistics> {
-    return this.http.get<IResponseStatistics>(environment.statistics);
+  getStats(): Observable<IResponseStatistics[]> {
+    return this.http.get<IResponseStatistics[]>(environment.statistics);
   }
 }
