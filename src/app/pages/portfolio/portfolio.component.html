@@ -6,7 +6,7 @@
   <h2 class="section__title">Publicaciones</h2>
 
   <ng-container>
-    <app-post-cards></app-post-cards>
+    <app-post-cards *ngFor="let article of articles; trackBy: trackByFn" [article]="article"></app-post-cards>
   </ng-container>
 
 </section>
@@ -15,7 +15,7 @@
   <h2 class="projects__title">Proyectos</h2>
 
   <div class="container-projects">
-      <app-card-projects></app-card-projects>
+      <app-card-projects *ngFor="let project of projects?.slice(0,3); trackBy: trackByFn" [project]="project" />
   </div>
   <img src="/assets/image/pipe.svg" alt="pipe" class="projects__pipe">
 </section>

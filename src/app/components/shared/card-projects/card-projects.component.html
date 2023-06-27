@@ -1,8 +1,8 @@
 <article class="card">
   <div class="projects">
     <div class="information">
-      <h1 class="information__title">{{ project.title }}</h1>
-      <time class="information__date">{{ project.date }}</time>
+      <h1 class="information__title">{{ project.name }}</h1>
+      <time class="information__date">{{ project.created_at | date }}</time>
       <p class="information__description">
         {{ project.description }}
       </p>
@@ -10,8 +10,8 @@
     <img src="/assets/image/pipe-projects.svg" alt="pipe projects" class="projects_pipe">
   </div>
   <div class="actions">
-    <img src="/assets/image/github.webp" alt="github project" />
-    <img src="/assets/image/shared.webp" alt="shared project" />
+    <img src="/assets/image/github.webp" alt="github project" (click)="goGeneric(project.html_url)" />
+    <img src="/assets/image/shared.webp" alt="shared project" (click)="goGeneric(project.homepage)" *ngIf="project.homepage"  />
     <img src="" alt="" />
   </div>
 </article>

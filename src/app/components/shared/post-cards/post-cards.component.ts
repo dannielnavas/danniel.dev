@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { IPost } from 'src/app/core/models/post.interface';
 
 @Component({
   selector: 'app-post-cards',
@@ -6,5 +7,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./post-cards.component.scss'],
 })
 export class PostCardsComponent {
-  @Input() post!: any;
+  @Input() article!: IPost;
+
+  goToArticle(url: string): void {
+    window.open(url, '_blank');
+  }
 }

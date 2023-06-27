@@ -8,17 +8,13 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: 'portfolio',
+        path: '',
         loadChildren: () =>
           import('../portfolio/portfolio.module').then(
             (m) => m.PortfolioModule
           ),
       },
     ],
-  },
-  {
-    path: '**',
-    redirectTo: 'portfolio',
   },
 ];
 

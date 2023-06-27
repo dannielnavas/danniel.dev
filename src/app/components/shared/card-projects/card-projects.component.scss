@@ -1,6 +1,6 @@
 .card {
   height: 322px;
-  width: 314px;
+  width: 308px;
   padding: 0 0 0 29px;
 }
 
@@ -44,6 +44,8 @@
     line-height: 18px;
     color: #FFFFFF;
     margin: 0 0 0 0;
+    height: 180px;
+    overflow: hidden;
   }
 }
 
@@ -51,4 +53,5 @@
   display: flex;
   flex-flow: row wrap;
   gap: 16px;
+  margin-top: 16px;
 }

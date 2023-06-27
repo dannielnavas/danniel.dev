@@ -1,12 +1,12 @@
-<article class="card">
+<article class="card" (click)="goToArticle(article.canonical_url)">
   <div class="images">
-    <img [src]="post.image" [alt]="post.title" class="images__post" />
+    <img [src]="article.cover_image" [alt]="article.title" class="images__post" />
     <img src="/assets/image/pipe-post.svg" alt="pipe posts" />
   </div>
   <div class="container">
-    <h2 class="container__title">{{ post.title }}</h2>
+    <h2 class="container__title">{{ article.title }}</h2>
     <p class="container__description">
-      {{ post.description }}
+      {{ article.description }}
     </p>
   </div>
 </article>
