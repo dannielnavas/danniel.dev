@@ -1,6 +1,6 @@
 <article>
   <div class="container">
-    <img [src]="video.snippet.thumbnails.high.url" [alt]="video.snippet.title" class="container__image">
+    <img [src]="video.snippet.thumbnails.high.url" loading="lazy" [alt]="video.snippet.title" class="container__image">
   </div>
 
   <div class="information">
@@ -8,7 +8,7 @@
       {{video.snippet.title}}
     </h3>
     <div class="information__starts">
-      <img src="/assets/image/start.webp" alt="start">
+      <img src="/assets/image/start.webp" alt="start" loading="lazy">
     </div>
   </div>
 

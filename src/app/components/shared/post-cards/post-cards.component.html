@@ -1,7 +1,7 @@
 <article class="card" (click)="goToArticle(article.canonical_url)">
   <div class="images">
     <img [src]="article.cover_image" [alt]="article.title" class="images__post" loading="lazy" />
-    <img src="/assets/image/pipe-post.svg" alt="pipe posts" />
+    <img src="/assets/image/pipe-post.svg" alt="pipe posts" loading="lazy" />
   </div>
   <div class="container">
     <h2 class="container__title">{{ article.title }}</h2>

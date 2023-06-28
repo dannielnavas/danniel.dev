@@ -30,6 +30,7 @@ export class PortfolioComponent implements OnInit {
     this.getProjectsGithub();
     this.getLastArticles();
     this.getStats();
+    this.getVideo();
   }
 
   getProjectsGithub(): void {

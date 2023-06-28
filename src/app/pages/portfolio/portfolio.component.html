@@ -17,14 +17,14 @@
   <div class="container-projects">
       <app-card-projects *ngFor="let project of projects?.slice(0,3); trackBy: trackByFn" [project]="project" />
   </div>
-  <img src="/assets/image/pipe.svg" alt="pipe" class="projects__pipe">
+  <img src="/assets/image/pipe.svg" alt="pipe" class="projects__pipe" loading="lazy" />
 </section>
 
 
 <section class="videos">
   <h2 class="videos__title">Videos</h2>
-    <app-card-video *ngIf="videos" [video]="videos.items[1]" />
-  <img src="/assets/image/pipe.svg" alt="pipe" class="videos__pipe">
+    <app-card-video *ngIf="videos" [video]="videos.items[0]" />
+  <img src="/assets/image/pipe.svg" alt="pipe" class="videos__pipe" loading="lazy" />
 </section>
 
 <section class="videos">
