@@ -14,6 +14,11 @@ const routes: Routes = [
             (m) => m.PortfolioModule
           ),
       },
+      {
+        path: 'blog',
+        loadChildren: () =>
+          import('../blog/blog.module').then((m) => m.BlogModule),
+      },
     ],
   },
 ];

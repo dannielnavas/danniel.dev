@@ -15,4 +15,8 @@ export class DevtoPostService {
       .get<IPost[]>(environment.devto)
       .pipe(map((response: IPost[]) => response.slice(0, 3)));
   }
+
+  allArticles(): Observable<IPost[]> {
+    return this.http.get<IPost[]>(environment.devto);
+  }
 }

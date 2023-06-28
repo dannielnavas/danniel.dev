@@ -5,25 +5,25 @@
   <menu class="menu">
     <img src="/assets/image/pipe-nav.svg" alt="" style="height: 90px;" >
     <li class="item">
-      <a routerLink="/" routerLinkActive="item__active">
+      <a routerLink="/" routerLinkActive="item__active" [routerLinkActiveOptions]="{ exact: true }">
       Inicio
       </a>
     </li>
     <img src="/assets/image/pipe-nav.svg" alt="" style="height: 90px;">
     <li class="item">
-      <a routerLink="/" routerLinkActive="item__active">
-      Blogs
+      <a routerLink="/blog" routerLinkActive="item__active" [routerLinkActiveOptions]="{ exact: true }">
+      Posts
       </a>
     </li>
     <img src="/assets/image/pipe-nav.svg" alt="" style="height: 90px;">
     <li class="item">
-      <a routerLink="/" routerLinkActive="item__active">
+      <a routerLink="/projects" routerLinkActive="item__active" [routerLinkActiveOptions]="{ exact: true }">
       Proyectos
       </a>
     </li>
     <img src="/assets/image/pipe-nav.svg" alt="" style="height: 90px;">
     <li class="item">
-      <a routerLink="/" routerLinkActive="item__active">
+      <a routerLink="/certificates" routerLinkActive="item__active" [routerLinkActiveOptions]="{ exact: true }">
       Certificados
       </a>
     </li>
