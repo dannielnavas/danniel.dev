@@ -1,3 +1,5 @@
+@import './../../../utils/scss/index.scss';
+
 .card {
   height: 322px;
   width: 308px;
@@ -32,7 +34,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    color: #0FA7C5;
+    color: $text-verde;
     margin: 0 0 32px 0;
   }
 

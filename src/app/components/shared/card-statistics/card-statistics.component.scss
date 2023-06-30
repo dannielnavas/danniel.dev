@@ -1,3 +1,5 @@
+@import './../../../utils/scss/index.scss';
+
 .card {
   width: 501px;
   height: 117px;
@@ -26,7 +28,8 @@
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 55px;
-    color: #0FA7C5;
+    color: $text-azul-fondo;
+    margin: 0;
+    text-shadow: 1px 1px 1px $text-verde;
   }
 }

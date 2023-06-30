@@ -1,3 +1,5 @@
+@import './../../../app/utils/scss/index.scss';
+
 .margin {
   height: 70px;
   width: 100%;
@@ -14,7 +16,7 @@
     font-size: 36px;
     line-height: 41px;
     margin: -41px 0 56px 118px;
-    color: #0FA7C5;
+    color: $text-verde;
     justify-self: start;
   }
 
@@ -38,7 +40,7 @@
     font-size: 36px;
     line-height: 41px;
     margin: 48px 0 64px 0;
-    color: #0FA7C5;
+    color: $text-verde;
     justify-self: start;
     text-align: center;
   }
@@ -73,7 +75,7 @@
     font-size: 36px;
     line-height: 41px;
     margin: 48px 0 64px 118px;
-    color: #0FA7C5;
+    color: $text-verde;
     justify-self: start;
   }
 
