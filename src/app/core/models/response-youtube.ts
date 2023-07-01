@@ -38,7 +38,7 @@ export interface Default {
 
 export interface Id {
   kind: string;
-  videoId?: string;
+  videoId: string;
   channelId?: string;
 }
 

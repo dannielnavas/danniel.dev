@@ -1,4 +1,4 @@
-<article>
+<article (click)="goToVideo(video.id.videoId)">
   <div class="container">
     <img [src]="video.snippet.thumbnails.high.url" loading="lazy" [alt]="video.snippet.title" class="container__image">
   </div>

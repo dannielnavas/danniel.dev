@@ -8,4 +8,8 @@ import { Item } from 'src/app/core/models/response-youtube';
 })
 export class CardVideoComponent {
   @Input() video!: Item;
+
+  goToVideo(videoId: string) {
+    window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+  }
 }
