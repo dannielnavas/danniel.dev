@@ -1,12 +1,17 @@
 @import './../../../app/utils/scss/index.scss';
 
 header {
-  width: 1060px;
+  max-width: 1060px;
+  width: 100%;
   height: 546px;
   margin: 32px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include for-phone-only {
+    justify-content: center;
+  }
 }
 
 .card {
@@ -18,10 +23,20 @@ header {
   justify-content: flex-start;
   align-items: center;
 
+  @include for-phone-only {
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+  }
+
   &__icon {
     height: 75px;
     width: 75px;
     margin: 31px 24px 34px 40px;
+
+    @include for-phone-only {
+      display: none;
+    }
   }
 
   h2 {
@@ -64,6 +79,22 @@ header {
   align-items: center;
   margin-top: 24px;
   gap: 16px;
+
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
+.image {
+  position: relative;
+
+  @include for-phone-only {
+    display: none;
+  }
+
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 }
 
 .pipe {
@@ -73,4 +104,12 @@ header {
   margin: -130px auto 0 auto;
   justify-content: center;
   display: flex;
+
+  @include for-phone-only {
+    display: none;
+  }
+
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 }

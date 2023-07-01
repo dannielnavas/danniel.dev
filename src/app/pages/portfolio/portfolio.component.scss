@@ -9,6 +9,8 @@
   height: auto;
   width: 100%;
 
+
+
   &__title {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -22,6 +24,10 @@
 
   &__pipe {
     margin: 104px 0 48px 0;
+
+    @include for-phone-only {
+      display: none;
+    }
   }
 }
 
@@ -31,6 +37,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
+
 
   &__title {
     width: 100%;
@@ -47,17 +55,24 @@
 
   &__pipe {
     margin: 104px 0 48px 0;
+
+    @include for-phone-only {
+      display: none;
+    }
   }
 }
 
 .container-projects {
   height: auto;
-  width: 1044px;
+  max-width: 1044px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   gap: 16px;
+
+
 }
 
 .videos {
@@ -66,6 +81,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
 
   &__title {
     width: 100%;
@@ -81,5 +97,9 @@
 
   &__pipe {
     margin: 104px 0 48px 0;
+
+    @include for-phone-only {
+      display: none;
+    }
   }
 }

@@ -1,20 +1,23 @@
+@import './../../../../app/utils/scss/index.scss';
+
 .container {
-  width: 1020px;
-  height: 462px;
+  max-width: 1020px;
+  width: 100%;
+  height: auto;
   background: #FFFFFF;
   border-radius: 12px;
   margin: 0 auto;
 
   &__image {
     width: 100%;
-    height: 100%;
     border-radius: 12px;
   }
 }
 
 .information {
   height: auto;
-  width: 1020px;
+  max-width: 1020px;
+  width: 100%;
   margin: 12px auto 0 auto;
   display: flex;
   flex-flow: row wrap;
