@@ -12,6 +12,10 @@ header {
   @include for-phone-only {
     justify-content: center;
   }
+
+  @include for-tablet-portrait-up {
+    justify-content: center;
+  }
 }
 
 .card {
