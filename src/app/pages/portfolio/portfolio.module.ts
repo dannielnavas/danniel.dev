@@ -6,6 +6,7 @@ import { CardProjectsModule } from 'src/app/components/shared/card-projects/card
 import { CardStatisticsModule } from 'src/app/components/shared/card-statistics/card-statistics.module';
 import { CardVideoModule } from 'src/app/components/shared/card-video/card-video.module';
 import { PostCardsModule } from 'src/app/components/shared/post-cards/post-cards.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioComponent } from './portfolio.component';
 
@@ -19,6 +20,7 @@ import { PortfolioComponent } from './portfolio.component';
     CardProjectsModule,
     CardVideoModule,
     CardStatisticsModule,
+    SharedModule,
   ],
 })
 export class PortfolioModule {}

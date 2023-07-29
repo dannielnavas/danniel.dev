@@ -21,6 +21,11 @@ const routes: Routes = [
           import('../blog/blog.module').then((m) => m.BlogModule),
         title: 'Danniel Navas - Blog',
       },
+      {
+        path: 'projects',
+        loadChildren: () => import('../projects/projects.module').then(m => m.ProjectsModule),
+        title: 'Danniel Navas - Projects',
+      }
     ],
   },
 ];

@@ -15,7 +15,7 @@
   <h2 class="projects__title">Proyectos</h2>
 
   <div class="container-projects">
-      <app-card-projects *ngFor="let project of projects?.slice(0,3); trackBy: trackByFn" [project]="project" />
+      <app-card-projects *ngFor="let project of projects | randomlist:3 ; trackBy: trackByFn" [project]="project" />
   </div>
   <img src="/assets/image/pipe.svg" alt="pipe" class="projects__pipe" loading="lazy" />
 </section>
