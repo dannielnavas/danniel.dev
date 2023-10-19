@@ -12,7 +12,7 @@ export class GithubService {
 
   getProjects(): Observable<IResponseGithub[]> {
     return this.http.get<IResponseGithub[]>(
-      `${environment.github_url}/DannielNavas/repos`
+      `${environment.github_url}/DannielNavas/repos?per_page=100`
     );
   }
 }
