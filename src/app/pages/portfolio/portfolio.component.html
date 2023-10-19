@@ -23,7 +23,9 @@
 
 <section class="videos">
   <h2 class="videos__title">Videos</h2>
-    <app-card-video *ngIf="videos" [video]="videos.items[0]" />
+    <ng-container *ngFor="let video of videos?.items?.slice(0,2)">
+      <app-card-video *ngIf="videos" [video]="video" />
+    </ng-container>
   <img src="/assets/image/pipe.svg" alt="pipe" class="videos__pipe" loading="lazy" />
 </section>
 
