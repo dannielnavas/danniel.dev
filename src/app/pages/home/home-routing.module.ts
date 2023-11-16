@@ -23,9 +23,10 @@ const routes: Routes = [
       },
       {
         path: 'projects',
-        loadChildren: () => import('../projects/projects.module').then(m => m.ProjectsModule),
+        loadChildren: () =>
+          import('../projects/projects.module').then((m) => m.ProjectsModule),
         title: 'Danniel Navas - Projects',
-      }
+      },
     ],
   },
 ];

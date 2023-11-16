@@ -1,6 +1,10 @@
 <section class="section">
   <h1 class="section__title">Projectos</h1>
-  <ng-container *ngFor="let project of projects | randomlist ; trackBy: trackByFn">
-    <app-card-projects [project]="project" *ngIf="project.homepage && project.homepage !== 'https://danniel.dev' "  />
-  </ng-container>
+  @for (project of projects | randomlist ; track trackByFn($index, project)) {
+
+  @if (project.homepage && project.homepage !== 'https://danniel.dev' ) {
+  <app-card-projects [project]="project" />
+  }
+
+  }
 </section>

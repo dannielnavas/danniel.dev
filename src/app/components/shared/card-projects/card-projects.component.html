@@ -11,7 +11,9 @@
   </div>
   <div class="actions">
     <img src="/assets/image/github.webp" loading="lazy" alt="github project" (click)="goGeneric(project.html_url)" />
-    <img src="/assets/image/shared.webp" loading="lazy" alt="shared project" (click)="goGeneric(project.homepage)" *ngIf="project.homepage"  />
+    @if (project.homepage) {
+    <img src="/assets/image/shared.webp" loading="lazy" alt="shared project" (click)="goGeneric(project.homepage)" />
+    }
     <img src="" alt="" />
   </div>
 </article>

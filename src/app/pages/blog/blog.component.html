@@ -1,4 +1,6 @@
 <section class="section">
   <h1 class="section__title">Articulos</h1>
-  <app-post-cards *ngFor="let article of articles" [article]="article" />
+  @for (article of articles; track article) {
+  <app-post-cards [article]="article" />
+  }
 </section>
