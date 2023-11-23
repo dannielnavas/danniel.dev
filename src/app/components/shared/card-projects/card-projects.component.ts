@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
 import { IResponseGithub } from 'src/app/core/models/response-github.interface';
+import { GoogleAnalyticsService } from 'src/app/core/services/google-analytics.service';
 
 @Component({
   selector: 'app-card-projects',
@@ -10,9 +10,15 @@ import { IResponseGithub } from 'src/app/core/models/response-github.interface';
 export class CardProjectsComponent {
   @Input() project!: IResponseGithub;
 
-  constructor(private router: Router) {}
+  constructor(private googleAnalyticsService: GoogleAnalyticsService) {}
 
-  goGeneric(url: string): void {
+  goGeneric(name: string, url: string): void {
+    this.googleAnalyticsService.logEvent(
+      'click',
+      'projects',
+      'go to project',
+      name
+    );
     window.open(url, '_blank');
   }
 }

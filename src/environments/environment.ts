@@ -7,4 +7,5 @@ export const environment = {
   youtube_key: 'AIzaSyAcFEiRtFoJqhcQWpnF3Vsyg7pLa09_fl0',
   youtube_channel: 'UC-WOFSnewqJ1CRjFuZYaYEQ',
   youtube_part: 'snippet',
+  googleAnalytics: 'G-PFQX7Y64N7',
 };
